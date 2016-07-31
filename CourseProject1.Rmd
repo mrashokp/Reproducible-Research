@@ -157,6 +157,5 @@ interval2 <- activity2 %>% group_by(interval, wk.typ) %>% summarize(avg.steps2 =
 head(interval2)
 
 ggplot(interval2, aes(x = interval, y = avg.steps2, color = wk.typ)) + geom_line() + facet_wrap(facets = ~ wk.typ)
-
 ```
 
